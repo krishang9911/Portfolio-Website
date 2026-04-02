@@ -1,4 +1,4 @@
-# 🌐 Portfolio Website
+# 🌐 KRISHANG MAHAJAN - PORTFOLIO
 
 Welcome to my personal portfolio website.  
 This project showcases my skills, projects, and progress as a frontend-focused web developer.
