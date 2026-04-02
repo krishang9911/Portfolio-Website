@@ -1,201 +1,129 @@
-*{
-   margin:0;
-   padding:0;
-   box-sizing: border-box; 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.navbar{
-    background-color: rgb(250, 122, 158);
-    color: white;
-    padding: 15px 50px;
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #020617);
+    color: #e2e8f0;
+}
+
+/* NAVBAR */
+nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    padding: 20px 40px;
 }
 
-.navbar-logo{
-    font-size: 1.8em;
-    font-weight: bold;
+nav h2 {
+    background: linear-gradient(90deg, #38bdf8, #818cf8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.navbar-links{
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.navbar-links a{
-    color: white;
+nav a {
+    color: #cbd5f5;
     text-decoration: none;
-    font-size: 0.9em;
-    opacity: o.8;
-    transition: opacity 0.3s;
+    margin-left: 20px;
+    transition: 0.3s;
 }
 
-.hero-section{
-    padding: 60px 10px;
-    background-color: white;
-
+nav a:hover {
+    color: #38bdf8;
 }
 
-.container_hero-content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
 }
 
-.text-content{
-    max-width: 60%;
-    
+.hero h1 {
+    font-size: 3rem;
+    background: linear-gradient(90deg, #38bdf8, #818cf8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.greeting{
-    font-size: 4em;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-bottom: 20px ;
-    padding-top: 20px;
+.hero p {
+    margin-top: 10px;
+    color: #94a3b8;
 }
 
-.title{
-    font-size: 4em;
-    color: rgb(250, 122, 158);
-    font-family: Arial, Helvetica, sans-serif;
-    padding-bottom: 20px;
+/* SECTION */
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
 }
 
-.image-content{
-    flex: 0 0 300px;
-    position: relative;
-    padding: 15px;
+/* CARD */
+.card {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 25px;
+    border: 1px solid rgba(255,255,255,0.1);
 }
 
-.profile-image{
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-    background-color: black;
-    padding: 10px;
+/* PROJECT */
+.project {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: all 0.3s ease;
 }
 
-.about-section{
-    padding: 40px 10px;
-    background-color: white;
+.project:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 10px 40px rgba(56,189,248,0.2);
 }
 
-.about-me{
-    padding-bottom: 10px;
-    color: black;
-    font-family: Arial;
-    font-size: 1.2em;
+.project h3 {
+    color: #38bdf8;
+    margin-bottom: 10px;
 }
 
-.skills-section{
-    padding: 40px 10px;
-    background-color: white;
+.project p {
+    color: #cbd5f5;
+    line-height: 1.5;
 }
 
-.my-skills{
-    font-size: 1.5em;
-    padding-bottom: 30px;
-    font-family: Arial;
-    color: black;
-}
-
-.qualification{
-    display: flex;
-    gap: 5em;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.skill-tag{
-    background-color: rgb(250, 122, 158);
-    padding: 15px 40px;
-    border-radius: 5px;
-    font-weight: bold;
-    font-family: fantasy;
-    text-transform: uppercase;
+.tech {
+    margin-top: 12px;
     font-size: 14px;
+    color: #94a3b8;
 }
 
-.projects-section{
-    padding: 40px 10px;
-    background-color: white;
-}
-
-.projects{
-    display: grid;
-    grid-template-columns: 1 1fr;
-    gap: 30px;
-}
-
-.project-box{
-    border: 1px solid;
-    padding: 30px;
+/* BUTTONS */
+.links a {
+    display: inline-block;
+    margin-top: 12px;
+    margin-right: 10px;
+    padding: 8px 14px;
     border-radius: 8px;
-    background-color: rgb(250, 122, 158);
-    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    background: linear-gradient(135deg, #38bdf8, #6366f1);
     color: white;
-    margin-left: 100px;
-    margin-right: 100px;
+    transition: 0.3s;
 }
 
-.my-projects{
-    padding-bottom: 20px;
-    font-size: 1.8em;
-    font-family: Arial;
-    color: rgb(5, 5, 5);
+.links a:hover {
+    transform: scale(1.05);
 }
 
-.contact-section{
-    padding: 40px 10px;
-    background-color: white;
-}
-
-.contact-me{
-    padding-bottom: 20px;
-    font-size: 2em;
-    font-family: Arial;
-    color: black;
-    margin-bottom: 40px;
-
-}
-
-.contact-form-container{
-    max-width: 400px;
-    margin: 0 auto;
+/* FOOTER */
+footer {
+    text-align: center;
     padding: 20px;
-    border: 1px solid blue;
-    background-color: white;
-}
-
-.form-group{
-    margin-bottom: 15px;
-}
-
-.authentication{
-    padding: 30px 10px;
-    background-color: rgb(250, 122, 158);
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.authentication-me{
-    color: white;
-    font-family: Arial;
-    font-size: small;
-}
-
-.send-button{
-    border: 1px solid;
-    background-color: rgb(250, 122, 158);
-    color: white;
-    width: 100%;
-    padding: 10px;
-    font-size: 1.1em;
-    margin-top: 5px;
+    margin-top: 40px;
+    color: #94a3b8;
 }
